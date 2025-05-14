@@ -1,7 +1,11 @@
 import path from "path";
 import webpack from 'webpack';
+import {fileURLToPath} from 'url';
 import {buildWebpackConfig} from "./config/build/buildWebpackConfig";
 import {BuildEnv, BuildPaths} from "./config/build/types/config";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export default (env: BuildEnv) => {
     const paths: BuildPaths = {
