@@ -1,3 +1,6 @@
+import {createRequire} from 'module';
+
+const require = createRequire(import.meta.url);
 import {ResolveOptions} from "webpack";
 import {BuildOptions} from "./types/config";
 

@@ -20,6 +20,7 @@ export default [
             },
             globals: {
                 ...globals.browser,
+                ...globals.jest,
                 __IS_DEV__: true,
                 require: true
             },
