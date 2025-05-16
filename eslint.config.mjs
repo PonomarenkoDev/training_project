@@ -46,6 +46,7 @@ export default [
             'import/extensions': 'off',
             'import/no-extraneous-dependencies': 'off',
             'no-underscore-dangle': 'off',
+            'max-len': ['error', {ignoreComments: true, code: 120}],
         },
     },
 ];
